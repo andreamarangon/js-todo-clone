@@ -8,13 +8,20 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: #121212;
+  font-size: 18px;
 }
 
 .container {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   background-color: #202124;
   height: 80vh;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
 }
 
 #todo {
@@ -23,10 +30,21 @@ body {
 
 .input {
   display: none;
+  height: 23px;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 h1 {
   color : #3caea3;
+  padding: 20px;
 }
 
 input {
@@ -38,10 +56,19 @@ input {
   outline: none;
 }
 
+.delete, .edit {
+  cursor: pointer;
+  color: #9AA0A6;
+}
+
+.todo-li {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #add {
   font-size: 40px;
-  /* height: 40px;
-  width: 40px; */
   cursor: pointer;
   display: inline;
   color: #9AA0A6;
@@ -55,12 +82,8 @@ input {
   align-items: center;
   border-bottom: 2px solid #121212;
 }
-
-
-/* header */
-header {
-  display: flex;
-  justify-content: center;
+.delete {
+  padding-right: 20px;
 }
 
 /* UTILITY */

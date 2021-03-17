@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //al click su add
+  //al click su add aggiungiamo l'item
   $('#add').click(function () {
     var todoTitle = $('#todoTitle').val();
     //si azzera l'imput #todoTitle
@@ -17,7 +17,7 @@ $(document).ready(function () {
       titleDOM.hide();
       $(this).siblings('input').val(title).show();
     });
-
+    //al click su invio inseriamo la modifica
     template.children('input').keyup(function(e) {
       if (e.which == 13) {
         var title = $(this).val();
